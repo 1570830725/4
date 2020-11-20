@@ -60,6 +60,7 @@ jobs:
     - name: 2. Get ESP-IDF
       working-directory: /workdir
       run: |
+        mkdir -p ~/esp
         cd ~/esp
         git clone -b v4.1 --recursive https://github.com/espressif/esp-idf.git
 
