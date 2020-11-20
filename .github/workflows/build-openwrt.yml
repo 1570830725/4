@@ -74,11 +74,6 @@ jobs:
         cd ~/esp
         git clone https://github.com/Jasonbroker/MK32
         
-    - name: 5. Set up the environment variables
-      run: |
-        cd ~/esp
-        . $HOME/esp/esp-idf/export.sh
-        
     - name: SSH connection to Actions
       uses: P3TERX/ssh2actions@v1.0.0
       if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
