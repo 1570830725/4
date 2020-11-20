@@ -76,6 +76,7 @@ jobs:
         
     - name: 5. Set up the environment variables
       run: |
+        cd ~/esp
         . $HOME/esp/esp-idf/export.sh
         
     - name: SSH connection to Actions
