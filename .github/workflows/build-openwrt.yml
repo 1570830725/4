@@ -74,7 +74,7 @@ jobs:
         cd ~/esp
         git clone https://github.com/Jasonbroker/MK32
         
-     - name: 5. Set up the environment variables
+    - name: 5. Set up the environment variables
       run: |
         cd ~/esp
         . $HOME/esp/esp-idf/export.sh
