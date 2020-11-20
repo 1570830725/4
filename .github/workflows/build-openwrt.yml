@@ -69,13 +69,14 @@ jobs:
         cd ~/esp/esp-idf
         ./install.sh
 
-    - name: 4. Set up the environment variables
-      run: . $HOME/esp/esp-idf/export.sh
-
-    - name: 5. git mk32
+    - name: 4. git mk32
       run: |
         cd ~/esp
         git clone https://github.com/Jasonbroker/MK32
+        
+    - name: 5. Set up the environment variables
+      run: |
+        . $HOME/esp/esp-idf/export.sh
         
     - name: SSH connection to Actions
       uses: P3TERX/ssh2actions@v1.0.0
